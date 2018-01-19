@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22A0A3C2-B680-481C-A24C-2F8C981E1FF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>图书管理系统</RootNamespace>
+    <AssemblyName>图书管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelp.cs" />
+    <Compile Include="信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="信息查询.Designer.cs">
+      <DependentUpon>信息查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登陆界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登陆界面.Designer.cs">
+      <DependentUpon>登陆界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="借阅历史查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="借阅历史查询.Designer.cs">
+      <DependentUpon>借阅历史查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="借书处理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="借书处理.Designer.cs">
+      <DependentUpon>借书处理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="还书处理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="还书处理.Designer.cs">
+      <DependentUpon>还书处理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="主界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主界面.Designer.cs">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限设置.Designer.cs">
+      <DependentUpon>权限设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限修改.Designer.cs">
+      <DependentUpon>用户权限修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="古籍添加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="古籍添加.Designer.cs">
+      <DependentUpon>古籍添加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="古籍查重.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="古籍查重.Designer.cs">
+      <DependentUpon>古籍查重.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户信息添加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户信息添加.Designer.cs">
+      <DependentUpon>用户信息添加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户信息管理.Designer.cs">
+      <DependentUpon>用户信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="图书挂失.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="图书挂失.Designer.cs">
+      <DependentUpon>图书挂失.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="图书管理系统DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>图书管理系统DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登陆界面.resx">
+      <DependentUpon>登陆界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="借阅历史查询.resx">
+      <DependentUpon>借阅历史查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="借书处理.resx">
+      <DependentUpon>借书处理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="还书处理.resx">
+      <DependentUpon>还书处理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主界面.resx">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限设置.resx">
+      <DependentUpon>权限设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限修改.resx">
+      <DependentUpon>用户权限修改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="古籍添加.resx">
+      <DependentUpon>古籍添加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="古籍查重.resx">
+      <DependentUpon>古籍查重.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户信息添加.resx">
+      <DependentUpon>用户信息添加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户信息管理.resx">
+      <DependentUpon>用户信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="图书挂失.resx">
+      <DependentUpon>图书挂失.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="图书管理系统DataSet.xsc">
+      <DependentUpon>图书管理系统DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="图书管理系统DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>图书管理系统DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="图书管理系统DataSet.xss">
+      <DependentUpon>图书管理系统DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

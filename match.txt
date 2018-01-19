@@ -1,0 +1,11 @@
+        internal static bool match(string p, string pat1)
+        {
+            string text = p;
+            string pattern = pat1;
+            Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
+            Match m = r.Match(text);
+            if (m.Success)
+                return true;
+            else
+                return false;
+        }
